@@ -1,0 +1,127 @@
+.header {
+    margin-top: 57px;
+    margin-left: 260px;
+    margin-bottom: 90px;
+}
+
+.l {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-right: 10px auto;
+    margin-bottom: 40px;
+}
+
+.search input {
+    width: 234px;
+    padding: 0 42px 5px 25px;
+    border: none;
+    font-size: 23px;
+    border-bottom: 1px solid black;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search button {
+    border: none;
+    background: none;
+    height: 31px;
+    width: 25px;
+}
+
+.logo {
+    margin: 0 auto;
+    height: 162px;
+    width: auto;
+    display: block;
+    
+}
+
+.icons_favourites {
+    width: 46.4px;
+    height: 46.6px;
+    margin-left: 80px;
+    margin-bottom: 40px;
+
+}
+
+.icons_login {
+    width: 46.4px;
+    height: 46.6px;
+    margin-left: 53px;
+    margin-bottom: 40px;
+}
+
+.icons_basket {
+    width: 46.4px;
+    height: 46.6px;
+    margin-left: 35px;
+    margin-bottom: 40px;
+}
+
+.navbar {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    width: 1400px;
+    padding:7px 7px;
+    margin-top: -30px;
+    
+}
+
+.pages {
+    margin-left: 124px;
+    margin-right: 124px;
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Адаптивность */
+@media (max-width: 1440px) {
+    .header {
+        margin: 50px 100px;
+    }
+
+    .navbar {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .pages {
+        margin: 0 40px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        margin: 20px;
+    }
+
+    .l {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 20px 0;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pages {
+        margin: 10px 0;
+    }
+}

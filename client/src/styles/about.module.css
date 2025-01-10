@@ -1,0 +1,115 @@
+.about {
+    /* display: flex; */
+    /* justify-content: center; */
+    margin-right: 130px;
+    margin-left: 100px;
+    padding-bottom: 70px;
+    /* display: table; */
+}
+
+.about h3 {
+    font-size: 84.81px;
+    font-weight: 500;    
+}
+
+.about p, p1 {
+    font-size: 30px;
+    line-height: 39px;
+}
+
+.about a {
+    text-decoration: underline;
+}
+
+.about_first {
+    display: table-row;
+}
+
+.about_first img {
+    width: 486px;
+    height: 581px;
+    margin-left: 50px;
+    margin-right: 50px;    
+    margin-top: 15px;
+    margin-bottom: 40px;
+}    
+/* 
+.about_first p, p1 {
+    font-size: 30px;
+    line-height: 39px;
+} */
+
+.about_first p {
+    margin-bottom: 160px;
+}
+
+.about_first h2 {
+    font-size: 79.64px;
+    font-weight: 600;
+    line-height: 97.08px;
+    margin-bottom: 40px;
+}
+
+.about_first h3 {
+    line-height: 110.25px;
+    margin-top: 25px;
+}
+
+.about_first hr {
+    border-width: 2px;
+    width: 668px;
+    border-color: black;
+}
+
+.first_column {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.second_column {
+    display: table-cell;
+    width: 1062px;
+}
+
+.about_text {
+    margin-top: 10px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.graduation {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.graduation h2 {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.graduation a {
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.graduation img {
+    width: 1454px;
+    height: 747px;
+    display: block; 
+    margin: auto;
+    margin-bottom: 35px;
+}
+
+.carousel {
+    text-align: center;
+    margin-left: 87px;
+    margin-right: 87px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.carousel img {
+    width: 464px;
+    height: 569px;
+}

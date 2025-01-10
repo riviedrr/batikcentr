@@ -1,0 +1,45 @@
+.footer {
+    padding: 50px;
+    padding-left: 100px;
+    background: #D9D9D9;
+    height: 504px;
+    display: flex;
+    gap: 100px;
+    font-size: 20px;
+}
+
+.footer img {
+    width: 260px;
+    margin-bottom: 45px;
+}
+
+
+.footer p, a {
+    font-family: "Inter", "sans-serif";
+    text-decoration: none;
+    color: black;
+}
+
+.footer li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer h3 {
+    margin-top: 10px;
+    margin-bottom: 23px;    
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.number {
+    font-size: 32px;
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    margin-bottom: 0;
+}

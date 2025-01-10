@@ -1,0 +1,220 @@
+
+.contacts {
+    margin: 0 auto 300px auto;
+    text-decoration: none;
+    max-width: 1400px;
+    padding: 0 20px; /* Отступы для мобильных */
+    box-sizing: border-box;
+}
+
+.contacts h1 {
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 36px; /* Добавляем размер шрифта для больших экранов */
+}
+
+.contacts ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contacts img {
+    width: 34px;
+    height: 34px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.block_left,
+.block_right {
+    width: 48%;
+    margin: 0 1%; /* Добавляем отступ между колонками */
+    float: none; /* Сброс float */
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.block_left {
+    background-color: #f9f9f9;
+    overflow: auto;
+    margin-top: 40px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 30px 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.input {
+    margin: 0 0 20px 0;
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 65px;
+    background-color: #D9D9D9;
+}
+
+.button {
+    text-align: center;
+    width: 100%;
+    max-width: 217px;
+    height: 52px;
+    font-size: 27.91px;
+    color: black;
+    border: 1px solid black;
+    border-radius: 65px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+/* .button:hover {
+    background-color: #0056b3;
+} */
+
+/* .checkbox {
+    display: none;
+} */
+
+/* .checkbox + label {
+    display: inline-block;
+    margin-left: 54px;
+    margin-bottom: 20px;
+    font-size: 24.5px;
+    cursor: pointer;
+} */
+
+.block_right {
+    overflow: auto;
+    font-weight: lighter;
+    padding-left: 85px;
+}
+
+.block_right a, p {
+    margin-left: 54px;
+    font-size: 24.5px;
+}
+
+.block_right h3 {
+    font-size: 28px;
+    margin-bottom: 24.5px;
+    margin-top: 66px;
+} 
+
+/* Планшеты (до 1024px) */
+@media (max-width: 1024px) {
+    .block_left, .block_right {
+        width: 100%;
+        margin: 20px 0; /* Убираем отступ между колонками */
+    }
+    
+    .block_left {
+        font-size: 16px;
+        padding: 20px;
+    }
+
+    .contacts h1 {
+        font-size: 28px;
+    }
+
+    .contacts img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .input {
+        font-size: 14px;
+    }
+
+    .button {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .block_right a, .block_right p {
+        font-size: 14px;
+    }
+
+    .block_right h3 {
+        font-size: 18px;
+    }
+}
+
+/* Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+    .contacts {
+        margin-bottom: 150px;
+        padding: 10px;
+    }
+
+    .contacts h1 {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+
+    .block_left, .block_right {
+        width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .block_left {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .input {
+        width: calc(100% - 10px);
+        font-size: 14px;
+    }
+
+    .button {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .block_right a, .block_right p {
+        font-size: 12px;
+    }
+
+    .block_right h3 {
+        font-size: 16px;
+    }
+}
+
+/* Очень маленькие устройства (до 480px) */
+@media (max-width: 480px) {
+    .contacts {
+        margin-bottom: 100px;
+    }
+
+    .contacts h1 {
+        font-size: 20px;
+    }
+
+    .block_left, .block_right {
+        padding: 10px;
+    }
+
+    .block_left {
+        font-size: 12px;
+    }
+
+    .input {
+        font-size: 12px;
+    }
+
+    .button {
+        font-size: 12px;
+        height: 35px;
+    }
+
+    .block_right a, .block_right p {
+        font-size: 10px;
+    }
+
+    .block_right h3 {
+        font-size: 14px;
+    }
+}

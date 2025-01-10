@@ -1,0 +1,104 @@
+.images {
+    width: 1660px;
+    height: 892px;
+    display: block; 
+    margin: auto;
+}
+
+.head{
+    font-size: 47.38px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.why_us {
+    /* margin-left: 343.55px; */
+    margin-top: 55px;
+}
+.why_us_columns {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.why_us_columns img{
+    width: 165.93px;
+    height: 165.93px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.why_us_columns p{
+    padding-top: 13px;
+    margin: auto;
+    font-size: 28.43px;
+    width: 284.31px;
+    line-height: 35px;
+}
+
+.courses {
+    text-align: center;
+    position: relative;
+}
+
+.courses img {
+    width: 1660px;
+    height: 788px;
+    margin-top: 30px;
+}
+
+.courses button {
+    position: absolute;
+    top: 85%;
+    right: 2%;
+    transform: translate(-45%, -40%);
+    /* -ms-transform: translate(-50%, -50%); */
+    background-color: #555;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    padding-left: 26px;
+    border: none;
+    cursor: pointer;
+    border-radius: 35px;
+    width: 402px;
+    height: 88px;
+    line-height: 30px;
+    text-align: left;
+    font-weight: 700;
+}
+
+.courses button:hover {
+    background-color: rgb(48, 48, 48);
+}
+
+.reviews {
+    text-align: center;
+    margin-left: 216px;
+    margin-right: 216px;
+    margin-top: 80px;
+    margin-bottom: 120px;
+}
+
+.reviews img {
+    width: 464px;
+    height: 569px;
+}
+
+.button {
+    margin-top: 40px;
+    background-color: #E9E9E9;
+    font-size: 26.49px;
+    border: none;
+    cursor: pointer;
+    border-radius: 35px;
+    width: 399px;
+    height: 58.77px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color: rgb(165, 165, 165);
+}
