@@ -11,17 +11,17 @@ const Catalog = observer(() => {
   const {product} = useContext(Context)
 
   useEffect(() => {
-    product.fetchProducts(null, null, 1, 12).then(data => 
-      product.setProducts(data.rows),
+    product.fetchProducts(null, null, 1, 12).then(data => {
+      product.setProducts(data.rows)
       product.setTotalCount(data.count)
-      )
+      })
   }, [])
 
   useEffect(() => {
-    product.fetchProducts(product.selectedType.id, product.selectedBrand.id, product.page, 12).then(data => 
-      product.setProducts(data.rows),
+    product.fetchProducts(product.selectedType.id, product.selectedBrand.id, product.page, 12).then(data => {
+      product.setProducts(data.rows)
       product.setTotalCount(data.count)
-      )
+      })
   }, [product.page, product.selectedType, product.selectedBrand,])
 
   return (

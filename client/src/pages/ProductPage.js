@@ -8,13 +8,12 @@ import { fetchOneProduct } from '../components/http/API';
 
 
 const ProductPage = () => {
-  const [product, setProduct] = React.useState({info: []});
+  const [product, setProduct] = useState({info: []});
   const {id} = useParams();
 
   useEffect(() => {
-    fetchOneProduct(id)
-      .then(data => set(data))
-  })
+    fetchOneProduct(id).then(data => setProduct(data))
+}, [])
   // const product ={id: 3, 
   //                name: 'Silver Reed LK 150', 
   //                price: '1.000.000', 

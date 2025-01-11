@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Form } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
@@ -40,8 +40,8 @@ const CreateBrand = ({show, onHide}) => {
             </Form>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="outline-success" onClick={addBrand}>Добавить</Button>
             <Button variant="outline-danger" onClick={onHide}>Закрыть</Button>
+            <Button variant="outline-success" onClick={addBrand}>Добавить</Button>
           </Modal.Footer>
         </Modal>
     );
