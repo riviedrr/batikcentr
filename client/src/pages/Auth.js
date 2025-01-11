@@ -1,13 +1,19 @@
 import React, { useState } from "react";
 import styles from "../styles/auth.module.css";
 import { login } from "../components/http/userAPI"; 
-import { REGISTRATION_ROUTE } from "../utilis/consts";
+import { REGISTRATION_ROUTE, SHOP_ROUTE } from "../utilis/consts";
+import { observer } from "mobx-react-lite";
+import { useContext } from "react";
+import { Context } from "../index";
+import { useNavigate } from "react-router-dom";
 
 const Auth = observer(() => {
+    const { user } = useContext(Context);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -19,12 +25,15 @@ const Auth = observer(() => {
         setLoading(true);
         try {
             const response = await login(email, password);
-            console.log(response); // Можно заменить на редирект или другие действия
+            user.setUser(user);
+            user.setIsAuth(true);
+            navigate(SHOP_ROUTE);
         } catch (err) {
             setError(err.response?.data?.message || "Ошибка авторизации");
         } finally {
             setLoading(false);
         }
+
     };
 
     return (

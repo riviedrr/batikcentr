@@ -12,7 +12,7 @@ const ProductItem = ({product}) => {
     return (
         <div style={{marginBottom: 83}} onClick={() => navigate(PRODUCT_ROUTE + '/' + product.id)}>
             <Card style={{width: 342, cursor: 'pointer', border: 'none'}}>
-                <Card.Img variant="top" src={product.img}/>
+                <Card.Img variant="top" src={process.env.REACT_APP_API_URL + product.img}/>
                 <Card.Body>
                     <Card.Title style={{fontSize: 24, textAlign: 'center', marginBottom: 17}}>{product.name}</Card.Title>
                     <div style={{color: 'rgba(0, 0, 0, 0.6)', fontSize: 18, textAlign: 'center', lineHeight: 1.4, borderBottom: '1px solid #000000'}}>{product.description}</div>
